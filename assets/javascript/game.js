@@ -17,8 +17,8 @@ const computerKeyChoices = ["a", "b", "c", "d", "e", "f",
 const numberOfKeys = computerKeyChoices.length;
 console.log(numberOfKeys);
 
-
-let x;
+// this is what the computer picks
+let compKey;
 
 // FUNCTIONS
 // ----------------------------------------------
@@ -27,8 +27,8 @@ function randomAnswer() {
 
     let i = Math.floor(Math.random() * numberOfKeys);
     
-    x = computerKeyChoices[i];
-    console.log("winning number " +x);
+    compKey = computerKeyChoices[i];
+    console.log("winning number " +compKey);
 }
 
 
@@ -40,15 +40,18 @@ console.log(guessesSoFar);
 
 
 // function to update stats: 
-// function updateStats() {
+function updateStats() {
+    document.getElementById()
 
-//     document.querySelector("#wins").innerHTML =   wins;
-//     document.querySelector("#losses").innerHTML =  losses;
 
-//     document.querySelector("#guesses-left").innerHTML =  guessesLeft;
 
-//     document.querySelector("#guesses-so-far").innerHTML =  guessesSoFar;
-// }
+    document.querySelector("#wins").innerHTML =   wins;
+    document.querySelector("#losses").innerHTML =  losses;
+
+    document.querySelector("#guesses-left").innerHTML =  guessesLeft;
+
+    document.querySelector("#guesses-so-far").innerHTML =  guessesSoFar;
+}
 
 
 // // STARTING THE GAME ---- CALLING THE FUNCTIONS
@@ -75,7 +78,7 @@ document.onkeyup = function (justAnything) {
     guessesLeft--;
     console.log(guessesLeft);
 
-    if (userGuess === x && guessesLeft >= 0) {
+    if (userGuess === compKey && guessesLeft >= 0) {
         wins++;
 
         guessesLeft = 9;
@@ -85,7 +88,7 @@ document.onkeyup = function (justAnything) {
         randomAnswer();
 
     }
-    else if (userGuess !== x && guessesLeft > 0) {
+    else if (userGuess !== compKey && guessesLeft > 0) {
         guessesSoFar.push(userGuess);
         console.log("wrong answer");
         // updateStats();
