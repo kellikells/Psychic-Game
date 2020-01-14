@@ -11,6 +11,8 @@ function pageElementsFirst() {
     // connect to HTML so stats are viewable
     let winsText = document.getElementById("wins");
     console.log("THIS SHOULD BE WINSTEXT " + winsText);
+
+    // ---------tried to add style by adding (.style.font-family= 'Caveat', cursive;)
     let lossesText = document.getElementById("losses");
     let guessesLeftText = document.getElementById("guesses-left");
     let guessesSoFarText = document.getElementById("guesses-so-far");
