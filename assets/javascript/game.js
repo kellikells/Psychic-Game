@@ -35,6 +35,11 @@ function pageElementsFirst() {
     generateAnswer();
     console.log("winning letter " + answer);
     // --------------Game starts once user presses a key-------------
+    //const functionToUseOnKeyUp = function(e) {console.log(e.key)};
+
+    //document.onkeyup = functionToUseOnKeyUp;
+
+
     document.onkeyup = function (event) {
 
         // when key is pressed, stored this value in var, userGuess   
@@ -72,22 +77,22 @@ function pageElementsFirst() {
             }
         }
 
-        // html display
-        if (winsText) {
-            winsText.textContent = "Wins: " + wins;
-        }
-        if (lossesText) {
-            lossesText.textContent = "Losses: " + losses;
-        }
-        if (guessesLeftText) {
-            guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
-        }
-        if (guessesSoFarText) {
-            guessesSoFarText.textContent = "Your Guesses so far: " + guessesSoFar;
-        }
-        //   winsText.textContent = "Wins: " + wins;
-        //   lossesText.textContent = "Losses: " + losses;
-        //   guessesLeftText.textContent = "Guesses left: " + guessesLeft;
-        //   guessesSoFarText.textContent = "Guesses So far: " + guessesSoFarText;
+        // // html display
+        // // if (winsText) {
+        //     winsText.textContent = "Wins: " + wins;
+        // // }
+        // // if (lossesText) {
+        //     lossesText.textContent = "Losses: " + losses;
+        // // }
+        // if (guessesLeftText) {
+        //     guessesLeftText.textContent = "Guesses Left: " + guessesLeft;
+        // }
+        // if (guessesSoFarText) {
+        //     guessesSoFarText.textContent = "Your Guesses so far: " + guessesSoFar;
+        // }
+          winsText.textContent = "Wins: " + wins;
+          lossesText.textContent = "Losses: " + losses;
+          guessesLeftText.textContent = "Guesses left: " + guessesLeft;
+          guessesSoFarText.textContent = "Guesses So far: " + guessesSoFar;
     }
 }

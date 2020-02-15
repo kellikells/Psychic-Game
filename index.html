@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
 
     <!-- reset css -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Audiowide|Indie+Flower|Monoton|Permanent+Marker&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css?family=Amatic+SC|Audiowide|Indie+Flower|Monoton|Permanent+Marker&display=swap"
+        rel="stylesheet">
+
     <!-- jquery script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -21,26 +24,36 @@
 </head>
 
 <body onload="pageElementsFirst()">
-    
+
     <header>
-     <h1>The Psychic Game</h1>
-         <p>Guess what letter I'm thinking of</p>
-         <img src="assets/images/morpheus_matrix.jpg">
+        <h1>The Psychic Game</h1>
+        <h3>Guess what letter I'm thinking of</p>
+
     </header>
-    
+
+    <!-- container holding img & table  -->
+    <div class="container">
+        <img id="background-morpheus" src="assets/images/morpheus_matrix.jpg" alt="Morpheus">
+
+
+        <!-- displays wins/losses/guesses left & letters guessed  -->
+        <div class="text-display" id="win-loss">
+            <p class="counter" id="wins">Wins: 0</p>
+            <p class="counter" id="losses">Losses: 0</p>
+        </div>
+
+        <div class="text-display" id="guesses">
+            <p class="counter" id="guesses-left">Guesses Left: 9</p>
+            <p class="counter" id="guesses-so-far">Your Guesses so far: </p>
+        </div>
 
 
 
-    <div class="counter" id="wins">Wins: 0</div>
+    </div>
 
-    <div class="counter" id="losses">Losses: 0</div>
-
-    <div class="counter" id="guesses-left">Guesses Left: 9</div>
-
-    <div class="counter" id="guesses-so-far">Your Guesses so far: </div>
-    
 
 
 
 </body>
+
 </html>
