@@ -25,23 +25,25 @@
 
 <body onload="pageElementsFirst()">
 
-    <header>
-        <h1>The Psychic Game</h1>
-        <h3>Guess what letter I'm thinking of</p>
-
-    </header>
-
     <!-- container holding img & table  -->
     <div class="container">
         <img id="background-morpheus" src="assets/images/morpheus_matrix.jpg" alt="Morpheus">
 
+        <!-- header container  -->
+        <div id="header-container">
+            <header>
+                <h1>The Psychic Game</h1>
+                <h3>Guess what letter I'm thinking of</p>
+            </header>
+        </div>
 
-        <!-- displays wins/losses/guesses left & letters guessed  -->
+        <!-- displays wins/losses -->
         <div class="text-display" id="win-loss">
             <p class="counter" id="wins">Wins: 0</p>
             <p class="counter" id="losses">Losses: 0</p>
         </div>
 
+        <!-- guesses left / guessed  -->
         <div class="text-display" id="guesses">
             <p class="counter" id="guesses-left">Guesses Left: 9</p>
             <p class="counter" id="guesses-so-far">Your Guesses so far: </p>
