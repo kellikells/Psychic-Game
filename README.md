@@ -16,9 +16,9 @@ Utilized:
   - document.getElementById() _method_
   - textContent _property_  
 
-![opening page](https:///assets/images/overall.jpg)
+![opening page](assets/images/overall.jpg)
 
-![playing example](/README/playing.jpg)
+![playing example](assets/images/playing.jpg)
   
   
  Link to deployed project:
