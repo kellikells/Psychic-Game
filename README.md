@@ -10,10 +10,18 @@ Counters displayed include:
   - What letters have been guessed during a round of play (resets every win/loss)
 
 Utilized: 
-  -onkeyup _event_
-  -if, else if, else _conditional statements_
-  -push() _method_
-  -document.getElementById() _method_
-  -textContent _property_
+  - onkeyup _event_
+  - if, else if, else _conditional statements_
+  - push() _method_
+  - document.getElementById() _method_
+  - textContent _property_  
+
+![opening page](https:///assets/images/overall.jpg)
+
+![playing example](/README/playing.jpg)
+  
+  
+ Link to deployed project:
+  https://kellikells.github.io/Psychic-Game/
  
  
