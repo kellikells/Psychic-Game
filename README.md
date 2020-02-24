@@ -15,5 +15,8 @@ Utilized:
   -push() _method_
   -document.getElementById() _method_
   -textContent _property_
+  
+ Link to deployed project:
+  https://kellikells.github.io/Psychic-Game/
  
  
